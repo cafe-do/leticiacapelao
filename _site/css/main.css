@@ -5833,8 +5833,6 @@ button.close {
 
 #contact-info {
   margin: 15px 0; }
-  #contact-info a {
-    color: #222; }
   @media (max-width: 767px) {
     #contact-info .email {
       font-size: 1.1em;
@@ -5891,10 +5889,20 @@ section.section > div {
   section.section > div .btn {
     background: transparent;
     border: solid 2px #fff; }
+    section.section > div .btn:hover, section.section > div .btn:active {
+      background-color: rgba(255, 255, 255, 0.1); }
 section.section.angelologia > div {
-  background: #824883; }
+  background-image: -webkit-linear-gradient(top, #824883 0%, #613662 100%);
+  background-image: -o-linear-gradient(top, #824883 0%, #613662 100%);
+  background-image: linear-gradient(to bottom, #824883 0%, #613662 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF824883', endColorstr='#FF613662', GradientType=0); }
 section.section.ead > div {
-  background: #1B75BB; }
+  background-image: -webkit-linear-gradient(top, #1B75BB 0%, #15598e 100%);
+  background-image: -o-linear-gradient(top, #1B75BB 0%, #15598e 100%);
+  background-image: linear-gradient(to bottom, #1B75BB 0%, #15598e 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF1B75BB', endColorstr='#FF15598E', GradientType=0); }
 @media (max-width: 767px) {
   section.section.ead {
     margin: 10px 0; } }

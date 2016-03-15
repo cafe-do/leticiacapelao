@@ -26,8 +26,6 @@
 #contact-info {
 	margin: 15px 0;
 
-	a { color: $brand-primary; }
-
 	@media (max-width: $screen-xs-max) {
 		.email { 
 			font-size: 1.1em;

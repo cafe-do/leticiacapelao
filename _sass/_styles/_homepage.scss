@@ -10,12 +10,16 @@ section.section {
 		.btn {
 			background: transparent;
 			border: solid 2px #fff;
+
+			&:hover, &:active {
+				background-color: rgba(255, 255, 255, .1);
+			}
 		}
 	}
 
-	&.angelologia > div { background: #824883; }
+	&.angelologia > div { @include gradient-vertical($brand-angelologia, darken($brand-angelologia, 10%)); }
 	&.ead {
-		> div { background: #1B75BB; }
+		> div { @include gradient-vertical($brand-ead, darken($brand-ead, 10%)); }
 
 		@media (max-width: $screen-xs-max) {
 			margin: 10px 0;
