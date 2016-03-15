@@ -5827,9 +5827,9 @@ button.close {
     height: 32px;
     text-indent: -9999px; }
     #social-network li a.instagram {
-      background-image: url(/images/social-instagram.png); }
+      background-image: url(../images/social-instagram.png); }
     #social-network li a.facebook {
-      background-image: url(/images/social-facebook.png); }
+      background-image: url(../images/social-facebook.png); }
 
 #contact-info {
   margin: 15px 0; }
