@@ -31,8 +31,15 @@
 	@media (max-width: $screen-xs-max) {
 		.email { 
 			font-size: 1.1em;
-			
+			display: block;
+    		margin-top: 15px;
 		}
-		.phone { font-size: 1.8em; }
+		.phone { 
+			margin-bottom: 10px;			
+
+			@include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
+			@include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-large, $line-height-base, $btn-border-radius-base);
+			@include user-select(none);
+		}
 	}
 }
