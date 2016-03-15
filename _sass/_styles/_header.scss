@@ -1,0 +1,38 @@
+// **********
+// SITE HEADER
+// **********
+#brand-image {
+    margin: 15px 0;
+}
+
+#site-title { display: none; }
+
+#social-network {
+	li {
+		display: inline-block;
+		margin-right: 2px;
+		a {
+			background: transparent center no-repeat;
+			width: 32px;
+			height: 32px;
+			text-indent: -9999px;
+
+			&.instagram { background-image: url(/images/social-instagram.png); }
+			&.facebook { background-image: url(/images/social-facebook.png); }
+		}
+	}
+}
+
+#contact-info {
+	margin: 15px 0;
+
+	a { color: $brand-primary; }
+
+	@media (max-width: $screen-xs-max) {
+		.email { 
+			font-size: 1.1em;
+			
+		}
+		.phone { font-size: 1.8em; }
+	}
+}
