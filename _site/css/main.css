@@ -5883,7 +5883,7 @@ button.close {
   #site-footer .cafe-do-love {
     color: #1B75BB; }
   #site-footer .cafe-do-logo {
-    vertical-align: center; }
+    margin-top: -3px; }
 
 section.section > div {
   padding: 40px 20px;
