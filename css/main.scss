@@ -3,9 +3,10 @@
 ---
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-		"_styles/fonts",
 		"variables",
         "bootstrap",
+		"_styles/fonts",
+		"_styles/custom-buttons",
         "_styles/header",
         "_styles/footer",
         "_styles/homepage"

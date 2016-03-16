@@ -1,7 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: Stark;
-  src: url("../fonts/stark.otf") format("opentype"); }
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5812,29 +5809,39 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: Stark;
+  src: url("../fonts/stark.otf") format("opentype"); }
+.btn-transparent {
+  background: transparent;
+  border: solid 2px #fff;
+  color: #fff; }
+  .btn-transparent:hover, .btn-transparent:active {
+    background-color: rgba(255, 255, 255, 0.1); }
+
 #brand-image {
   margin: 15px 0; }
 
 #site-title {
   display: none; }
 
-#social-network li {
+.social-network li {
   display: inline-block;
   margin-right: 10px; }
-  #social-network li:last-child {
+  .social-network li:last-child {
     margin-right: 0; }
-  #social-network li a {
+  .social-network li a {
     background: transparent center no-repeat;
     width: 32px;
     height: 32px;
     text-indent: -9999px; }
-    #social-network li a.instagram {
+    .social-network li a.instagram {
       background-image: url(../images/social-instagram.png); }
-    #social-network li a.facebook {
+    .social-network li a.facebook {
       background-image: url(../images/social-facebook.png); }
-    #social-network li a.youtube {
+    .social-network li a.youtube {
       background-image: url(../images/social-youtube.png); }
-    #social-network li a.skype {
+    .social-network li a.skype {
       background-image: url(../images/social-skype.png); }
 
 #contact-info {
@@ -5894,24 +5901,21 @@ button.close {
     margin-top: -3px; }
 
 section.section > div {
-  padding: 40px 20px;
-  color: #fff;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3); }
-  section.section > div > h2 {
+  section.section > div h2 {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
-  section.section > div .btn {
-    background: transparent;
-    border: solid 2px #fff; }
-    section.section > div .btn:hover, section.section > div .btn:active {
-      background-color: rgba(255, 255, 255, 0.1); }
 section.section.angelologia > div {
+  color: #fff;
+  padding: 40px 20px;
   background-image: -webkit-linear-gradient(top, #824883 0%, #613662 100%);
   background-image: -o-linear-gradient(top, #824883 0%, #613662 100%);
   background-image: linear-gradient(to bottom, #824883 0%, #613662 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF824883', endColorstr='#FF613662', GradientType=0); }
 section.section.ead > div {
+  color: #fff;
+  padding: 40px 20px;
   background-image: -webkit-linear-gradient(top, #1B75BB 0%, #15598e 100%);
   background-image: -o-linear-gradient(top, #1B75BB 0%, #15598e 100%);
   background-image: linear-gradient(to bottom, #1B75BB 0%, #15598e 100%);
@@ -5920,6 +5924,28 @@ section.section.ead > div {
 @media (max-width: 767px) {
   section.section.ead {
     margin: 10px 0; } }
+section.section.about div.photo img {
+  border-radius: 100%; }
+@media (min-width: 768px) {
+  section.section.about div.photo {
+    position: absolute; } }
+section.section.about > div {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-image: -webkit-linear-gradient(top, #ecf0f1 0%, #fff 100%);
+  background-image: -o-linear-gradient(top, #ecf0f1 0%, #fff 100%);
+  background-image: linear-gradient(to bottom, #ecf0f1 0%, #fff 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFECF0F1', endColorstr='#FFFFFFFF', GradientType=0); }
+section.section.contact > div {
+  margin-top: 20px;
+  background-image: -webkit-linear-gradient(top, #ecf0f1 0%, #fff 100%);
+  background-image: -o-linear-gradient(top, #ecf0f1 0%, #fff 100%);
+  background-image: linear-gradient(to bottom, #ecf0f1 0%, #fff 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFECF0F1', endColorstr='#FFFFFFFF', GradientType=0); }
+section.section.contact form {
+  margin-top: 70px; }
 
 body {
   background: #ffb557 top center no-repeat;

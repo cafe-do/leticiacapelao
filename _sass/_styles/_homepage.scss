@@ -4,28 +4,56 @@
 
 section.section {
 	> div {
-		padding: 40px 20px;
-		color: #fff;
 		@include box-shadow(0 3px 3px rgba(0,0,0,.3));
 
-		> h2 { text-shadow: 0 1px 2px rgba(0,0,0,.6); } 
-
-		.btn {
-			background: transparent;
-			border: solid 2px #fff;
-
-			&:hover, &:active {
-				background-color: rgba(255, 255, 255, .1);
-			}
+		h2 {
+			text-shadow: 0 1px 2px rgba(0,0,0,.6);
 		}
 	}
 
-	&.angelologia > div { @include gradient-vertical($brand-angelologia, darken($brand-angelologia, 10%)); }
+	&.angelologia > div {
+		color: #fff;
+		padding: 40px 20px;
+
+		@include gradient-vertical($brand-angelologia, darken($brand-angelologia, 10%));
+	}
+
 	&.ead {
-		> div { @include gradient-vertical($brand-ead, darken($brand-ead, 10%)); }
+		> div {
+			color: #fff;
+			padding: 40px 20px;
+			@include gradient-vertical($brand-ead, darken($brand-ead, 10%));
+		}
 
 		@media (max-width: $screen-xs-max) {
 			margin: 10px 0;
 		}
+	}
+
+	&.about {
+		div.photo {
+			img {
+				border-radius: 100%;
+			}
+
+			@media (min-width: $screen-sm-min) {
+				position: absolute;
+			}
+		}
+
+		> div {
+			margin-top: 20px;
+			padding-bottom: 20px;
+			@include gradient-vertical($gray-lighter, #fff);
+		}
+	}
+
+	&.contact {
+		> div {
+			margin-top: 20px;
+			@include gradient-vertical($gray-lighter, #fff);
+		}
+
+		form { margin-top: 70px; }
 	}
 }
