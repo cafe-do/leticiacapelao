@@ -10,3 +10,24 @@
         "_styles/footer",
         "_styles/homepage"
 ;
+
+body {
+	background: #ffb557 top center no-repeat;
+	background-image: url(../images/background-480.jpg);
+
+	@media (min-width: 480px) and (max-width: $screen-xs-max) {
+		background-image: url(../images/background-768.jpg);
+	}
+
+	@media (min-width: $screen-sm-min) and (max-width: $screen-md-max) {
+		background-image: url(../images/background-1200.jpg);
+	}
+
+	@media (min-width: $screen-lg-min) and (max-width: 1440px) {
+		background-image: url(../images/background-1440.jpg);
+	}
+
+	@media (min-width: 1441px) {
+		background-image: url(../images/background-1920.jpg);
+	}
+}

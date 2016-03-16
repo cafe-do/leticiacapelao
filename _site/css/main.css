@@ -5912,3 +5912,19 @@ section.section.ead > div {
 @media (max-width: 767px) {
   section.section.ead {
     margin: 10px 0; } }
+
+body {
+  background: #ffb557 top center no-repeat;
+  background-image: url(../images/background-480.jpg); }
+  @media (min-width: 480px) and (max-width: 767px) {
+    body {
+      background-image: url(../images/background-768.jpg); } }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    body {
+      background-image: url(../images/background-1200.jpg); } }
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    body {
+      background-image: url(../images/background-1440.jpg); } }
+  @media (min-width: 1441px) {
+    body {
+      background-image: url(../images/background-1920.jpg); } }
