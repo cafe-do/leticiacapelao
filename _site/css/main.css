@@ -1071,7 +1071,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Stark", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.42857;
   color: #222;
@@ -5188,7 +5188,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Stark", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5294,7 +5294,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Stark", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5832,7 +5832,8 @@ button.close {
       background-image: url(../images/social-facebook.png); }
 
 #contact-info {
-  margin: 15px 0; }
+  margin: 15px 0;
+  font-family: "Stark", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   @media (max-width: 767px) {
     #contact-info .email {
       font-size: 1.1em;
@@ -5877,7 +5878,8 @@ button.close {
         background-color: #fff; } }
 
 #site-footer {
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-family: "Stark", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   #site-footer .cafe-do-love {
     color: #1B75BB; }
   #site-footer .cafe-do-logo {
