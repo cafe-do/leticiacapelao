@@ -10,7 +10,10 @@
 #social-network {
 	li {
 		display: inline-block;
-		margin-right: 2px;
+		margin-right: 10px;
+
+		&:last-child { margin-right: 0; }
+
 		a {
 			background: transparent center no-repeat;
 			width: 32px;
@@ -19,6 +22,8 @@
 
 			&.instagram { background-image: url(../images/social-instagram.png); }
 			&.facebook { background-image: url(../images/social-facebook.png); }
+			&.youtube { background-image: url(../images/social-youtube.png); }
+			&.skype { background-image: url(../images/social-skype.png); }
 		}
 	}
 }
@@ -27,6 +32,10 @@
 	margin: 15px 0;
 	font-family: $font-family-brand;
 
+	.country-code {
+		font-size: .7em;
+	}
+
 	@media (max-width: $screen-xs-max) {
 		.email { 
 			font-size: 1.1em;
@@ -34,7 +43,7 @@
     		margin-top: 15px;
 		}
 		.phone { 
-			margin-bottom: 10px;			
+			margin-bottom: 10px;
 
 			@include button-variant($btn-info-color, $btn-info-bg, $btn-info-border);
 			@include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-large, $line-height-base, $btn-border-radius-base);

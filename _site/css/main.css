@@ -5820,7 +5820,9 @@ button.close {
 
 #social-network li {
   display: inline-block;
-  margin-right: 2px; }
+  margin-right: 10px; }
+  #social-network li:last-child {
+    margin-right: 0; }
   #social-network li a {
     background: transparent center no-repeat;
     width: 32px;
@@ -5830,10 +5832,16 @@ button.close {
       background-image: url(../images/social-instagram.png); }
     #social-network li a.facebook {
       background-image: url(../images/social-facebook.png); }
+    #social-network li a.youtube {
+      background-image: url(../images/social-youtube.png); }
+    #social-network li a.skype {
+      background-image: url(../images/social-skype.png); }
 
 #contact-info {
   margin: 15px 0;
   font-family: "Stark", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  #contact-info .country-code {
+    font-size: .7em; }
   @media (max-width: 767px) {
     #contact-info .email {
       font-size: 1.1em;
