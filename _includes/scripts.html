@@ -1,2 +1,13 @@
 <script src="{{ "/js/jquery-2.2.1.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+  var _hta = {'_setToken': '1d7700cbaac896ddd521c3e9203f8f13b9ca88a3','_htException': 'HandTalk_EXCECAO'};
+  (function() {
+    var ht = document.createElement('script'); ht.type = 'text/javascript'; ht.async = true;
+    ht.src = 'http://api.handtalk.me/handtalk_init.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.appendChild(ht);
+  })();
+  //  HandTalk_EXCECAO -> ID ou CLASSE do elemento que desejar exceção, separados por virgula
+  //  Exemplo:  '#menu,.listas,.formulario,#carrousel'
+</script>
