@@ -5820,7 +5820,13 @@ button.close {
     background-color: rgba(255, 255, 255, 0.1); }
 
 #brand-image {
-  margin: 15px 0; }
+  margin: 15px 0;
+  width: 280px;
+  height: 100px; }
+  @media (min-width: 768px) {
+    #brand-image {
+      width: 340px;
+      height: 130px; } }
 
 #site-title {
   display: none; }
@@ -5950,7 +5956,10 @@ section.section.contact > div {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFECF0F1', endColorstr='#FFFFFFFF', GradientType=0); }
 section.section.contact form {
-  margin-top: 70px; }
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    section.section.contact form {
+      margin-top: 70px; } }
 
 body {
   background: #ffb557 top center no-repeat;

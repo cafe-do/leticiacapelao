@@ -3,6 +3,13 @@
 // **********
 #brand-image {
     margin: 15px 0;
+    width: 280px;
+    height: 100px;
+
+    @media (min-width: $screen-sm-min) {
+    	width: 340px;
+    	height: 130px;
+    }
 }
 
 #site-title { display: none; }

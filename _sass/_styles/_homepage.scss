@@ -58,6 +58,12 @@ section.section {
 			@include gradient-vertical($gray-lighter, #fff);
 		}
 
-		form { margin-top: 70px; }
+		form {
+			margin-top: 30px;
+
+			@media (min-width: $screen-sm-min) {
+		    	margin-top: 70px;
+		    }
+		}
 	}
 }
