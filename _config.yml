@@ -46,5 +46,11 @@ description: > # this means to ignore newlines until "baseurl:"
   das flores, da liberdade e protetora de animais. Gosto de dança, música, esportes, comidas 
   naturais, livros e outras maravilhas que a vida oferece. A alegria do meu nome! Sou ouvinte 
   e tenho um irmão surdo. O que me levou a atuar na área de Libras e acessibilidade para surdos.
+
 baseurl: "/leticiacapelao" # the subpath of your site, e.g. /blog
 url: "http://cafe-do.github.io" # the base hostname & protocol for your site
+
+
+# PROD - Site settings
+# baseurl: ""
+# url: "http://leticiacapelao.com"
