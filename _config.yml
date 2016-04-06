@@ -28,7 +28,7 @@ markdown: kramdown
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "http://www.leticiacapelao.com" # the base hostname & protocol for your site
 
-DEV - Site settings
+# DEV - Site settings
 title: Letícia Capelão
 email: contato@leticiacapelao.com
 description: > # this means to ignore newlines until "baseurl:"
